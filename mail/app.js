@@ -10,6 +10,7 @@
 */ 
 
 
+
 const emails = [
     "a.catapano96@gmail.com",
     "andrea.catapano96@gmail.com",
@@ -21,15 +22,39 @@ const emails = [
 ];
 
 const userInput = prompt("Inserisci la tua email");
-let isCorrectMail = false; 
+let isCorrectMail = false;
+let emailsIndex = 0; 
+// CICLO FOR
 
-
+/*
 for(let i = 0; i <= emails.length; i++){
 
     if(userInput === emails[i]){
         isCorrectMail = true;
         break;
     }
+}
+
+if (isCorrectMail){
+    alert("Accesso autorizzato!");
+} else {
+    alert("Accesso non autorizzato!");
+}
+*/ 
+
+// Ciclo WHILE 
+
+while(!isCorrectMail){
+    if(userInput === emails[emailsIndex]){
+        isCorrectMail = true;
+        break
+    }
+
+    if (emails.length === emailsIndex -1){
+        break
+    }
+
+    emailsIndex++;
 }
 
 if (isCorrectMail){
