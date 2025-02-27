@@ -8,10 +8,14 @@
 ### Soluzione: Ciclo For
 
 - Creiamo un array per le email. 
+- Creaiamo una variabile bool falsa.  
 - Chiediamo l'input di un email al nostro utente 
 - PER OGNI email presente nell'array 
    - SE l'input è presente nell'array 
-      - Avvertiamo l'utente che l'operazione ha avuto successo. 
+      - Rendiamo la variabile bool vera.
       - Interrompiamo.
-   - Altrimenti
-      - Chiediamo all'utente di ripetere l'operazione.
+
+- Se la variabile bool è vera 
+  - Avvertiamo del successo
+- Altrimenti 
+  - Avvertiamo del fallimento
