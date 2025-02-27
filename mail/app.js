@@ -17,14 +17,14 @@ const emails = [
     "a.cata96@gmail.com",
     "catapano.andrea@gmail.com",
     "a.catapano96@hotmail.com",
-    "a.catapano96@libero.it",
+    "a.catapano96@libero.it"
 ];
 
 const userInput = prompt("Inserisci la tua email");
 let isCorrectMail = false; 
 
 
-for(i = 0; i <= emails.length; i++){
+for(let i = 0; i <= emails.length; i++){
 
     if(userInput === emails[i]){
         isCorrectMail = true;
