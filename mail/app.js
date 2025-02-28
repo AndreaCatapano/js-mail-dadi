@@ -24,6 +24,8 @@ const emails = [
 const userInput = prompt("Inserisci la tua email");
 let isCorrectMail = false;
 let emailsIndex = 0; 
+
+
 // CICLO FOR
 
 /*
@@ -44,14 +46,9 @@ if (isCorrectMail){
 
 // Ciclo WHILE 
 
-while(!isCorrectMail){
+while(!isCorrectMail && emailsIndex < emails.length){
     if(userInput === emails[emailsIndex]){
         isCorrectMail = true;
-        break
-    }
-
-    if (emails.length === emailsIndex -1){
-        break
     }
 
     emailsIndex++;
